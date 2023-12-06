@@ -1,0 +1,781 @@
+@import url(reset.css);
+@import url(fonts.css);
+@import url(specification.css);
+
+/* HEADER */
+.header {
+  position: relative;
+}
+.header .grblock {
+  width: 300px;
+  height: 400px;
+  top: -150px;
+  left: -150px;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+}
+.menu_navigation {
+  display: flex;
+  gap: 32px;
+}
+.menu_navigation-link {
+  opacity: 0.8;
+  position: relative;
+}
+.menu_navigation-link .grline {
+  opacity: 0;
+}
+.menu_navigation-link:hover .grline {
+  opacity: 1;
+}
+.menu_seacrh {
+  display: flex;
+}
+.menu_search-btn {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0 12px;
+}
+
+/* OFFER */
+.offer {
+  padding-top: 85px;
+  margin-bottom: 130px;
+  position: relative;
+}
+.offer>.grline,
+.offer-gpattern > .grline {
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(189, 0, 255, 0.00) 0%, rgba(189, 0, 255, 0.40) 100%);
+}
+.offer>.grline,
+.offer-gpattern > .grline {
+  bottom: 58px;
+  width: 50%;
+}
+.offer>.grblock {
+  height: 100%;
+  width: 50%;
+  opacity: 0.3;
+  left: auto;
+  right: 0;
+  z-index: -1;
+}
+.offer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.offer-textblock {
+  flex-basis: 560px;
+}
+.offer-textblock_name {
+  display: inline-block;
+  margin-bottom: 32px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Satoshi-Medium";
+  color: rgba(255, 255, 255, 0.8);
+}
+.offer-textblock_subtitle {
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.offer-textblock_links {
+  margin-bottom: 40px;
+}
+.offer-textblock_social-title {
+  margin-bottom: 12px;
+  font-family: "Satoshi-Bold";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.offer-textblock_links--visit {
+  margin-right: 24px;
+}
+.offer-textblock_links--explore {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  position: relative;
+  padding-left: 60px;
+}
+.offer-textblock_links--explore::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  background: url(../images/icons/explore.svg) no-repeat;
+}
+.offer-imageblock {
+  font-family: "Satoshi-Medium";
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.offer-gpattern {
+  margin-right: 50px;
+  margin-top: 35px;
+  position: relative;
+}
+.offer-gpattern>.grline {
+  display: none;
+  bottom: -4px;
+  width: 100%;
+  right: -60px;
+}
+.offer-gpattern_image-block {
+  position: relative;
+}
+.offer-gpattern--first,
+.offer-gpattern--second {
+  position: absolute;
+}
+.offer-gpattern--first {
+  width: 350px;
+  height: 160px;
+  background: url(../images/gpattern_first.svg) no-repeat right top;
+  top: -35px;
+  left: -180px;
+}
+.offer-gpattern--second {
+  width: 138px;
+  height: 86px;
+  background: url(../images/gpattern_second.svg) no-repeat right top / cover;
+  top: 100px;
+  right: -50px;
+}
+.offer-gpattern_text {
+  color: rgba(61, 222, 237, 0.8);
+  position: absolute;
+}
+.offer-gpattern--first .offer-gpattern_text {
+  top: 34px;
+  right: 30px;
+}
+.offer-gpattern--second .offer-gpattern_text {
+  top: 35px;
+  right: 22px;
+}
+.offer-gpattern_subtext {
+  position: absolute;
+}
+.offer-gpattern_subtext--first {
+  top: 77px;
+  left: 0;
+}
+.offer-gpattern_subtext--second {
+  top: 136px;
+  left: 130px;
+}
+.offer-glist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 58px;
+}
+.offer-glist_item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* FEATURES */
+.features {
+  margin-bottom: 130px;
+}
+.features-content {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.features-imageblock {
+  position: relative;
+}
+.features-imageblock>.grblock {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border-radius: 40%;
+}
+.features-imageblock::before {
+  content: "";
+  display: inline-block;
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background: url(../images/vr-glass-bg.svg) no-repeat center / contain;
+}
+.features-imageblock_image {
+  margin: 0 auto;
+}
+.features-textblock {
+  flex-basis: 688px;
+}
+.features-textblock_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* BLOG */
+.blog {
+  margin-bottom: 284px;
+}
+.blog-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+}
+.blog-textblock {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+  flex-basis: 568px;
+}
+.blocg-textblock_title {
+  margin-bottom: 0;
+  max-width: 420px;
+}
+.blog-textblock_reviews {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.blog-textblock_reviews-text {
+  font-family: "Satoshi-Medium";
+  font-size: 24px;
+}
+.blog-imageblock {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.blog-imageblock>.grblock {
+  top: auto;
+  left: auto;
+  bottom: 52px;
+  right: 14px;
+  width: 30%;
+  transform: rotate(-40deg);
+  z-index: -1;
+}
+.blog-imageblock_post {
+  position: absolute;
+  bottom: -84px;
+  left: -68px;
+}
+.blog-imageblock_post-image {
+  border-radius: 4px;
+}
+
+/* GAMES */
+.games {
+  margin-bottom: 60px;
+}
+.games-textblock {
+  margin-bottom: 65px;
+  display: flex;
+  align-items: center;
+  gap: 275px;
+}
+.games-textblock_title {
+  margin-bottom: 0;
+}
+.games-textblock_subtitle {
+  max-width: 340px;
+}
+.games-textblock_subtitle span {
+  color: #3DDEED;
+}
+
+/* FAQ */
+.faq {
+  margin-bottom: 130px;
+  position: relative;
+  overflow: hidden;
+}
+.faq>.grblock {
+  height: 70%;
+  width: 400px;
+  left: auto;
+  top: 50%;
+  right: -200px;
+  opacity: 0.6;
+  transform: translateY(-50%);
+  border-radius: 40%;
+  z-index: -1;
+
+}
+.faq_title {
+  text-align: center;
+}
+.faq_spoiler-item,
+.faq_spoiler-item_title {
+  max-width: 928px;
+  margin: 0 auto;
+  position: relative;
+}
+.faq_spoiler-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 32px 40px;
+  margin-bottom: 24px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.faq_spoiler-item_title {
+  font-family: "Satoshi-Bold";
+  font-size: 24px;
+}
+.faq_spoiler-item_title::before,
+.faq_spoiler-item_title::after {
+  content: "";
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  transition: all ease 0.3s;
+}
+.faq_spoiler-item_title::before {
+  background: url(../images/icons/arrow_down.svg) no-repeat center;
+  top: 0;
+  right: 0;
+}
+.faq_spoiler-item_title::after {
+  background: url(../images/icons/arrow_up.svg) no-repeat center;
+  top: -20px;
+  right: 0;
+  opacity: 0;
+}
+.faq_spoiler-item[open] .faq_spoiler-item_title::before {
+  top: 20px;
+  opacity: 0;
+}
+.faq_spoiler-item[open] .faq_spoiler-item_title::after {
+  top: 0;
+  opacity: 1;
+}
+.faq_spoiler-item_subtitle {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 80px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.footer_social-block {
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.footer-main_number-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-menu_nav {
+  flex-direction: column;
+}
+.footer-company_nav {
+  flex-direction: column;
+}
+.footer-subscribe_subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+}
+.footer-subscribe_form {
+  display: flex;
+  align-items: center;
+}
+.footer-subscribe_input {
+  padding: 22px 39px;
+}
+.footer-subscribe_btn {
+  padding: 22px 39px;
+  border-radius: 0 4px 4px 0;
+}
+.footer-copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding-top: 32px;
+}
+.footer-copyright .grline {
+  top: 0;
+}
+
+
+/* ADAPTIVE */
+@media screen and (max-width: 1515px) {
+  .features-imageblock::before {
+      width: 100%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .offer>.grline {
+    display: none;
+  }
+  .offer-gpattern>.grline {
+    display: block;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .offer-gpattern {
+    margin-top: 0;
+  }
+  .faq > .grblock {
+    right: -300px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 46px;
+  }
+  .game-corner_title {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  /* SLIDER CHANGE SIZE */
+}
+@media screen and (max-width: 1060px) {
+  h1 {
+    font-size: 65px;
+  }
+  .games-textblock {
+    gap: 150px;
+  }
+}
+@media screen and (max-width: 990px) {
+  /* HEADER */
+  .header .grblock {
+    display: none;
+  }
+  .menu {
+    padding-top: 20px;
+  }
+  
+  /* OFFER */
+  .offer {
+    padding-top: 30px;
+    margin-bottom: 90px;
+  }
+  .offer > .grblock {
+    height: 60%;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+  }
+  .offer-content {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-end;
+  }
+  .offer-textblock {
+    flex-basis: 100%;
+  }
+  .offer-textblock_title {
+    max-width: 600px;
+  }
+
+  /* FEATURES */
+  .features {
+    margin-bottom: 90px;
+  }
+  .features-content {
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+  .features-imageblock {
+    flex-basis: 90%;
+    order: 1;
+    margin: 0 auto;
+  }
+  .features-textblock {
+    flex-basis: 100%;
+  }
+
+  /* BLOG */
+  .blog {
+    margin-bottom: 180px;
+  }
+  .blog-content {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .blog-imageblock {
+    margin: 0 auto;
+  }
+  .blog-imageblock > .grblock {
+    display: none;
+  }
+  .blog-imageblock_post {
+    left: -30px;
+  }
+
+  /* GAMES */
+  .games {
+    margin-bottom: 0;
+  }
+  .games-textblock {
+    justify-content: space-between;
+  }
+  .glide__arrows {
+    display: none;
+  }
+  /* SLIDER CHANGE */
+
+  /* FAQ */
+  .faq {
+    margin-bottom: 90px;
+  }
+  .faq > .grblock {
+    display: none;
+  }
+  .faq_spoiler {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .faq_spoiler-item_title {
+    padding-right: 50px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-subscribe {
+    flex-basis: 100%;
+    margin-top: 40px;
+  }
+  .footer-copyright {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  h2 {
+    font-size: 35px;
+  }
+  /* HEADER */
+  .menu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .menu_navigation,
+  .logo,
+  .menu_seacrh {
+    flex-basis: 100%;
+  }
+  .menu_navigation {
+    justify-content: center;
+  }
+  .logo {
+    order: -1;
+    text-align: center;
+  }
+  .menu_seacrh {
+    justify-content: center;
+    width: 50%;
+  }
+
+  /* OFFER */
+  .offer-gpattern--first,
+  .offer-gpattern--second {
+    display: none;
+  }
+
+  /* FEATURES */
+  .features-imageblock_image {
+    max-width: 60%;
+  }
+  .features-imageblock::before {
+    max-width: 80%;
+  }
+
+  /* BLOG */
+  .blog-textblock {
+    flex-basis: 100%;
+  }
+  .blocg-textblock_title {
+    max-width: 100%;
+  }
+  .blocg-textblock_subtitle {
+    max-width: 80%;
+  }
+  .blog-imageblock_post {
+    left: 0;
+    max-width: 350px;
+  }
+
+  /* FAQ */
+  .faq_spoiler-item_title {
+    font-size: 20px;
+  }
+  .faq_spoiler-item_subtitle {
+    font-size: 16px;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    justify-content: space-between;
+  }
+  .footer_title {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* OFFER */
+  .offer-gpattern {
+    margin: 0;
+  }
+  .offer-gpattern > .grline {
+    right: -10px;
+  }
+  .offer-gpattern_image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* GAMES */
+  .game-corner {
+    margin: 0 auto;
+  }
+  .game-corner_title {
+    text-align: center;
+  }
+  .glide_slide > .grblock {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 580px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  /* OFFER */
+  .offer-glist {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .offer-glist_item {
+    flex-basis: 100%;
+  }
+  
+  /* FEATURES */
+  .features-textblock_list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  /* BLOG */
+  .blog-imageblock_post {
+    max-width: 300px;
+  }
+  .blog-textblock_reviews-text {
+    font-size: 18px;
+  }
+
+  /* GAMES */
+  .games-textblock {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .games-textblock_title {
+    flex-basis: 100%;
+  }
+
+  /* FAQ */
+  .faq_spoiler-item {
+    padding: 16px 20px;
+  }
+  .faq_spoiler-item_title {
+    font-size: 18px;
+  }
+
+  /* FOOTER */
+  .footer-subscribe_form {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .footer-subscribe_input,
+  .footer-subscribe_btn {
+    flex-basis: 90%;
+  }
+  .footer-subscribe_btn {
+    text-align: center;
+    padding: 25px 39px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  /* OFFER */
+  .offer-textblock_links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 60%;
+    margin-bottom: 40px;
+  }
+  .offer-textblock_links--visit {
+    margin: 0;
+  }
+
+  /* BLOG */
+  .blog-imageblock_post {
+    bottom: -130px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .footer-main {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+  .footer-subscribe {
+    max-width: 100%;
+  }
+  .footer-subscribe_input {
+    padding: 22px 22px;
+  }
+  .footer-copyright {
+    font-size: 14px;
+  }
+}
